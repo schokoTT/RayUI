@@ -5,7 +5,7 @@ local positions = {
     target_buff_icon = { "BOTTOMLEFT", "RayUF_Target", "TOPLEFT", 0, 105 }, -- "目标buff&debuff"
     player_proc_icon = { "BOTTOMRIGHT", "RayUF_Player", "TOPRIGHT", 0, 60 }, -- "玩家重要buff&debuff"
     target_proc_icon = { "BOTTOMLEFT", "RayUF_Target", "TOPLEFT", 0, 60 }, -- "目标重要buff&debuff"
-    focus_buff_icon = { "BOTTOMLEFT", "RayUF_Focus", "TOPLEFT", 0, 10 }, -- "焦点buff&debuff"
+    focus_buff_icon = { "BOTTOMLEFT", "RayUF_Focus", "TOPLEFT", 0, 15 }, -- "焦点buff&debuff"
     cd_icon = function() return R:IsDeveloper() and { "TOPLEFT", "RayUIActionBar1", "BOTTOMLEFT", 0, -6 } or { "TOPLEFT", "RayUIActionBar3", "BOTTOMRIGHT", -28, -6 } end, -- "cd"
     player_special_icon = { "TOPRIGHT", "RayUF_Player", "BOTTOMRIGHT", 0, -9 }, -- "玩家特殊buff&debuff"
     pve_player_icon = { "BOTTOM", RayUIParent, "BOTTOM", -35, 350 }, -- "PVE/PVP玩家buff&debuff"
@@ -35,7 +35,7 @@ R["Watcher"] = {
                 direction = "RIGHT",
                 setpoint = positions.target_buff_icon,
                 size = 28,
-
+Propose file change
                 --生命之花
                 { spellID = 33763, unitId = "target", caster = "player", filter = "BUFF" },
                 --回春術
